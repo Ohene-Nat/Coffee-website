@@ -18,22 +18,22 @@
                 <button id="menu-close-button" class="fas fa-times"></button>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#menu" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Testimonials</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Gallery</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
             <button id="menu-open-button" class="fas fa-bars"></button>
@@ -41,7 +41,7 @@
     </header>
 
     <main>
-        <section class="hero-section">
+        <section id="home" class="hero-section">
             <div class="section-content">
                 <div class="hero-details">
                     <h2 class="title">Best Coffee in Town</h2>
@@ -61,7 +61,7 @@
         </section>
 
         <!--About Section-->
-        <section class="about-section">
+        <section id="about" class="about-section">
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <img src="images/about-image.jpg" alt="About" class="about-image">
@@ -80,7 +80,7 @@
         </section>
 
         <!--Menu Section-->
-        <section class="menu-section">
+        <section id="menu" class="menu-section">
             <h2 class="section-title">Our Menu</h2>
             <div class="section-content">
                 <ul class="menu-list">
@@ -119,7 +119,7 @@
         </section>
 
         <!--Testimonials Section-->
-        <section class="testimonials-section">
+        <section id="testimonials" class="testimonials-section">
             <h2 class="section-title">Testimonials</h2>
             <div class="section-content">
                 <div class="slider-container swiper">
@@ -156,6 +156,29 @@
                         <div class="swiper-slide-button swiper-button-next"></div>
                         
                 </div>
+            </div>
+        </section>
+
+        <!--Gallery Section-->
+        <section id="gallery" class="gallery-section">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item"><img src="images/gallery-2.jpg" alt="Coffee and dessert" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="images/gallery-4.jpg" alt="Coffee shop interior" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="images/gallery-5.jpg" alt="Fresh coffee" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="images/gallery-6.jpg" alt="Coffee served at the shop" class="gallery-image"></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Contact Section-->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <p><i class="fas fa-location-dot"></i> 123 Coffee Street, Brewtown</p>
+                <p><i class="fas fa-envelope"></i> hello@coffee.example</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
             </div>
         </section>
     </main>
