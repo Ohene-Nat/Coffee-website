@@ -1,5 +1,6 @@
 const menuOpenButton = document.querySelector('#menu-open-button');
 const menuCloseButton = document.querySelector('#menu-close-button');
+const navLinks = document.querySelectorAll('.nav-link');
 menuOpenButton.addEventListener('click', () => {
     //toggle the class 'show-mobile-menu' on the body element when the menu button is clicked
     document.body.classList.toggle("show-mobile-menu");
@@ -8,6 +9,11 @@ menuCloseButton.addEventListener('click', () => {
     //toggle the class 'show-mobile-menu' on the body element when the menu button is clicked
     document.body.classList.toggle("show-mobile-menu");
 });
+  navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', () => {
+      document.body.classList.remove('show-mobile-menu');
+    });
+  });
 
 // Initialize Swiper
 const swiper = new Swiper('.swiper', {
